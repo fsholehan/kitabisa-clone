@@ -18,6 +18,7 @@ function ViewPage() {
   console.log(show);
 
   useEffect(() => {
+	  window.scrollTo(0,0)
     window.addEventListener("scroll", transistionNavBar);
     return () => window.removeEventListener("scroll", transistionNavBar);
   }, []);
